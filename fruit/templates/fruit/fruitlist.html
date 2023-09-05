@@ -14,6 +14,7 @@
             <a href="{% url 'fruit:fruitlist'%}">List</a>
         </div>
     </header>
+<div class="content">
     {% if fruit_li %}
         <ol>
             {% for f in fruit_li %}
@@ -36,6 +37,7 @@
         {% csrf_token %}
         <input type="button" value="추가하기" onclick="location.href='{% url 'fruit:index' %}'">
     </form>
+</div>
     <footer>
         <div>
             <span>이름: 김건일</span><br>

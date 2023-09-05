@@ -224,7 +224,6 @@ def detail2(request,id):
     return render(request,'fruit/detail2.html',con)
 
 def fruitlist(request):
-    fruit_list = FruitTable.objects.filter(user=request.user)
     fruit_li = FruitTable.objects.filter(user=request.user)
     con = {
         'fruit_li':fruit_li,

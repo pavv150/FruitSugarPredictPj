@@ -14,6 +14,7 @@
             <a href="{% url 'fruit:fruitlist'%}">List</a>
         </div>
     </header>
+
     <img class='detailimg' src="/{{ img }}" alt="img" width="620" height="500">
     <br>
     <p><a href="{% url 'fruit:food' id%}">{{fruitlist}}</a></p>
@@ -21,6 +22,7 @@
     <p>{{ year }}년 {{ month }}월 {{ day }}일의 당도: {{ sugar }}brix(당도)</p>
     <br>
     <input type="button" value="뒤로 가기" onclick="location.href='{% url 'fruit:fruitlist' %}'">
+
     <footer>
         <div>
             <span>이름: 김건일</span><br>

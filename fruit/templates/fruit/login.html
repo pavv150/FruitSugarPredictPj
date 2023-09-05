@@ -13,7 +13,7 @@
         <p>{{ error_message }}</p>
     {% endif %}
     </header>
-
+<div class="content">
 <form class='loginform' method="post" >
         {% csrf_token %}
         {% if messages %}
@@ -29,7 +29,7 @@
         <hr><br>
         <input type="button" value="회원가입" onclick="location.href='{% url 'fruit:signup' %}'">
 </form>
-
+</div>
 <footer>
     <div>
         <span>이름: 김건일</span><br>
